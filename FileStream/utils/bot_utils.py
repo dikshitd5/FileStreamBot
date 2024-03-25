@@ -85,7 +85,7 @@ async def gen_link(_id):
     file_size = humanbytes(file_info['file_size'])
     mime_type = file_info['mime_type']
 
-    page_link = f"{Server.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}" "
+    page_link = f"{Server.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
     stream_link = f"{Server.URL}dl/{_id}"
     file_link = f"https://t.me/{FileStream.username}?start=file_{_id}"
 
