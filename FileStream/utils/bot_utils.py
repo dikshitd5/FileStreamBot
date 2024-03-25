@@ -93,7 +93,7 @@ async def gen_link(_id):
         stream_text = LANG.STREAM_TEXT.format(file_name, file_size, stream_link, page_link, file_link)
         reply_markup = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("WATCH 🖥", url=page_link), InlineKeyboardButton("ᴅᴏᴡɴʟᴏᴀᴅ", url=stream_link)],
+                [InlineKeyboardButton("WATCH 🖥", url=page_link), InlineKeyboardButton("DOWNLOAD 📥", url=stream_link)]
                 #[InlineKeyboardButton("ɢᴇᴛ ғɪʟᴇ", url=file_link), InlineKeyboardButton("ʀᴇᴠᴏᴋᴇ ғɪʟᴇ", callback_data=f"msgdelpvt_{_id}")],
                 #[InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
             ]
@@ -102,7 +102,7 @@ async def gen_link(_id):
         stream_text = LANG.STREAM_TEXT_X.format(file_name, file_size, stream_link, file_link)
         reply_markup = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("DOWNLOAD 📥", url=stream_link)],
+                [InlineKeyboardButton("DOWNLOAD 📥", url=stream_link)]
                 #[InlineKeyboardButton("ɢᴇᴛ ғɪʟᴇ", url=file_link), InlineKeyboardButton("ʀᴇᴠᴏᴋᴇ ғɪʟᴇ", callback_data=f"msgdelpvt_{_id}")],
                 #[InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
             ]
@@ -125,7 +125,7 @@ async def gen_linkx(m:Message , _id, name: list):
         stream_text= LANG.STREAM_TEXT_X.format(file_name, file_size, stream_link, page_link)
         reply_markup = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("WATCH 🖥", url=page_link), InlineKeyboardButton("ᴅᴏᴡɴʟᴏᴀᴅ", url=stream_link)]
+                [InlineKeyboardButton("WATCH 🖥", url=page_link), InlineKeyboardButton("DOWNLOAD 📥", url=stream_link)]
             ]
         )
     else:
