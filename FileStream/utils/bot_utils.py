@@ -7,6 +7,8 @@ from FileStream.utils.human_readable import humanbytes
 from FileStream.config import Telegram, Server
 from FileStream.bot import FileStream
 import asyncio
+import string
+import random
 from typing import (
     Union
 )
