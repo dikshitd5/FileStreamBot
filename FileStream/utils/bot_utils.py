@@ -6,10 +6,7 @@ from FileStream.utils.database import Database
 from FileStream.utils.human_readable import humanbytes
 from FileStream.config import Telegram, Server
 from FileStream.bot import FileStream
-from urllib.parse import quote_plus
 import asyncio
-import string
-import random
 from typing import (
     Union
 )
@@ -88,8 +85,8 @@ async def gen_link(_id):
     file_size = humanbytes(file_info['file_size'])
     mime_type = file_info['mime_type']
 
-    page_link = f"{Server.URL}watch/{_id}/dextinbots"
-    stream_link = f"{Server.URL}dl/{_id}/dextinbots"
+    page_link = f"{Server.URL}watch/{_id}"
+    stream_link = f"{Server.URL}dl/{_id}"
     file_link = f"https://t.me/{FileStream.username}?start=file_{_id}"
 
     if "video" in mime_type:
