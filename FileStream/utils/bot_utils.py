@@ -6,6 +6,7 @@ from FileStream.utils.database import Database
 from FileStream.utils.human_readable import humanbytes
 from FileStream.config import Telegram, Server
 from FileStream.bot import FileStream
+from urllib.parse import quote_plus
 import asyncio
 import string
 import random
